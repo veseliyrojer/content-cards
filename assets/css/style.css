@@ -1,0 +1,81 @@
+:root{
+    --font-size-title: 24px;
+    --font-family: sans-serif;
+
+}
+
+/* main background */
+.main{
+    background-color: black;
+    height:100vh;
+}
+/* cards block */
+.card-list-item{
+    display: inline-block;
+    width: 450px;
+    height: 280px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}  
+/* Gradient background of every cards */
+.sales-bcg-color{
+    background: linear-gradient(90deg, rgba(255,190,155,1) 0%, rgb(250, 85, 112) 100%);
+}
+.orders-bcg-color{
+    background: linear-gradient(90deg, rgba(46,185,255,1) 0%, rgba(0,116,224,1) 100%);
+}
+.visitors-bcg-color{
+    background: linear-gradient(90deg, rgb(105, 225, 201),rgb(12, 230, 230));
+}
+
+/* clear circles */
+.card-list-item::before , .card-list-item::after{
+    content: '';
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.2;
+    position: absolute;
+}
+.card-list-item::after{
+    right: -10px;
+    bottom: -110px;
+}
+.card-list-item::before{
+    right: -90px;
+    bottom: 60px;
+}
+
+/* content */
+.content-box{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    font-family: var(--font-family);
+    margin: 53px 37px;
+   
+}
+
+.title{
+    font-size: var(--font-size-title);
+    
+}
+.count{
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 68px;
+}
+.rate{
+    font-size: 20px;
+}
+
+/* icon */
+.svg{
+    width: 40px;
+    position: absolute;
+    top: 53px;
+    right: 40px;
+}
